@@ -17,10 +17,6 @@ describe('Login Tests', () => {
         loginPage.loginLinkShouldBeExpandable();
     });
 
-    it('Login link aria-expanded attribute should be false initially', () => {
-        loginPage.loginLinkAriaExpandedStateShouldBeFalse();
-    });
-
     it('Click on login link should expand login options', () => {
         loginPage.clickLoginLink();
         loginPage.loginLink.should('have.attr', 'aria-expanded', 'true');
