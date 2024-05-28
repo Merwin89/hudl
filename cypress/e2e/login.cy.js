@@ -119,7 +119,7 @@ describe('Login Tests', () => {
         loginPage.clickAppleLogin();
     });
 
-    it.only('leads to registration form on "Create Account" click', () => {
+    it('leads to registration form on "Create Account" click', () => {
         loginPage.clickLoginLink();
         loginPage.clickHudlLogin();
         loginPage.clickCreateAccount();
